@@ -6,7 +6,7 @@ import kids from "../../assets/images/kids.png"
 
 const Features =()=> {
     return(
-        <div>
+        <div className="">
             <div>
                 <h2>Enjoy on your TV.</h2>
                 <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>

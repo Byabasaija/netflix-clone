@@ -1,0 +1,60 @@
+/* override bootstrap defaults */
+$primary: red;
+
+
+/* import bootstrap styles */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+body {
+    color: #fff;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    ul {
+     list-style: none;
+    }
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+
+    button {
+        margin-right: 20px;
+    }
+}
+
+.header-bg{
+    background-image: url(./assets/images/home-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.hero {
+    height: 75vh;
+
+    .hero-items {
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        
+    }
+}
+
+.main {
+    max-width: 70%;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+

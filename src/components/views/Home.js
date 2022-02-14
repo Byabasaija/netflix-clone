@@ -7,11 +7,15 @@ import Navbar from "../subComponets/Navbar";
 const Home =() =>{
     return(
         <>
+        <div className="header-bg">
         <Navbar/>
         <Hero/>
+        </div>
+        <div className="main">
         <Features/>
         <FrequentlyAsked/>
         <Footer/>
+        </div>
         </>
     )
 }
