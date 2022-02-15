@@ -58,3 +58,66 @@ body {
 }
 
 
+// login  page 
+
+html,body{
+    background-image: url(./assets/images/home-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    }
+    
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .card{
+    height: 370px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    width: 280px;
+    background-color: rgba(0,0,0,0.5) !important;
+
+    .input {
+        padding: 10px;
+
+        input {
+            background-color: rgb(31, 29, 29);
+        }
+    }
+    }
+
+    
+    
+    
+    .card-header h3{
+    color: white;
+    }
+    
+    .remember{
+    color: white;
+    }
+    
+    .remember input
+    {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+    
+    .login_btn{
+    width: 100%;
+    border-radius: 1px;
+    }
+    
+    
+    .links{
+    color: white;
+    }
+    
+    .links a{
+    margin-left: 4px;
+    }
