@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Login =()=> {
+const Login =({setEmail,setPassword, handleAction})=> {
     return(
         <>
         <div className="container">
@@ -15,18 +15,18 @@ const Login =()=> {
 				<form>
 					<div className="input">
 						
-						<input type="text" className="" placeholder="username"/>
+						<input type="text" className="" placeholder="username" onChange={(e) => setEmail(e.target.value)}/>
 						
 					</div>
 					<div className="input">
 						
-						<input type="password" className="" placeholder="password"/>
+						<input type="password" className="" placeholder="password" onChange={(e)=>setPassword(e.target.value)}/>
 					</div>
 					<div className="row  remember">
 						<input type="checkbox"/>Remember Me
 					</div>
 					<div className="form-group">
-						<input type="submit" value="Login" className=" login-btn btn-primary"/>
+						<input type="submit" value="Login" className=" login-btn btn-primary" onClick={handleAction}/>
 					</div>
 				</form>
 			</div>

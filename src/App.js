@@ -1,18 +1,20 @@
+import { useState } from "react";
 import { Route, Routes } from "react-router";
-import Login from "./auth/Login";
-import Signup from "./auth/Signup";
-import Browse from "./components/views/Browse";
-import Home from "./components/views/Home";
+import  Jumbotron  from "./components/Jumbotron";
+import jumbotronData from "./fixtures/jumbotron.json"
+
 function App() {
+  
+
   return (
-    <>
-     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="browse" element={<Browse/>}/>
-      <Route path="login" element={<Login/>}/>
-      <Route path="/signup" element={<Signup/>}/>
-     </Routes>
-    </>
+    <Jumbotron.Container>
+     {jumbotronData.map((item)=>(
+       <Jumbotron key={item.id} direction={item.direction}>
+        
+       </Jumbotron>
+     ))}
+    </Jumbotron.Container>
+  
   );
 }
 
