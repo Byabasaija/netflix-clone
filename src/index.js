@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import "normalize.css";
 import reportWebVitals from './reportWebVitals';
-import "./index.scss"
 import GlobalStyles from './GlobalStyles';
 
 ReactDOM.render(
