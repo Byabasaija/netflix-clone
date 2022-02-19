@@ -1,20 +1,15 @@
 
-// import { Route, Routes } from "react-router";
-import FaqsContainer from "./containers/faqs";
-import FooterContainer from "./containers/Footer";
-import  JumbotronConatainer  from "./containers/jumbotron";
-
+import { Route, Routes } from "react-router";
+import * as ROUTES from "./constants/routes";
+import Home from "./views/Home";
 
 function App() {
-  
-
   return (
     
- <>
-  <JumbotronConatainer/>
-  <FaqsContainer/>
-  <FooterContainer/>
- </>
+ <Routes>
+   <Route path={ROUTES.HOME} element={<Home/>}/>
+ </Routes>
+
   
   );
 }
