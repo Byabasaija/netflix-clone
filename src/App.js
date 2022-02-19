@@ -1,7 +1,8 @@
 
-import { Route, Routes } from "react-router";
+// import { Route, Routes } from "react-router";
+import FaqsContainer from "./containers/faqs";
 import FooterContainer from "./containers/Footer";
-import { JumbotronConatainer } from "./containers/jumbotron";
+import  JumbotronConatainer  from "./containers/jumbotron";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     
  <>
   <JumbotronConatainer/>
+  <FaqsContainer/>
   <FooterContainer/>
  </>
   
