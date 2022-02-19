@@ -2,9 +2,7 @@ import React from "react";
 
 const Signup =()=>{
     return(
-        <>
-         <h1>Signup here</h1>
-        </>
+        <h1>This is the Signup</h1>
     )
 }
 
