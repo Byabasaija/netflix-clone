@@ -35,7 +35,9 @@ FaqAccordion.Item = function FaqAccordionItem({children, ...restProps}){
 FaqAccordion.Header = function FaqAccordionHeader({children, ...restProps}){
     const {showToggle, setShowToggle } = useContext(ToggleContext)
     return (
-        <Header onClick={()=>setShowToggle((showToggle)=>!showToggle)} {...restProps}>{children}</Header>
+        <Header onClick={()=>setShowToggle((showToggle)=>!showToggle)} {...restProps}>{children}
+        {showToggle ? (<img src="/assets/images/icons/close-slim.png" alt="close" />) : (<img src="/assets/images/icons/add.png" alt="open"/>)}
+        </Header>
     )
 }
 

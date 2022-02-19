@@ -70,6 +70,7 @@ export const Header = styled.div`
 export const Body = styled.div`
   font-size: 26px;
   font-weight: normal;
+  padding: 0.8em 1.2em 0.8em 1.2em;
   line-height: normal;
   background: #303030;
   white-space: pre-wrap;
